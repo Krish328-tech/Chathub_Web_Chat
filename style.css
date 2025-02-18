@@ -154,7 +154,7 @@
         margin: 10% auto; /* Center horizontally with auto */
         padding: 20px;
         padding-bottom: 30px;
-        width: 400px; /* Fixed width */
+        width: 330px; /* Fixed width */
         border-radius: 10px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
         position: relative;
@@ -176,12 +176,17 @@
 
     /* Adjusting specific elements to have even smaller font sizes */
     .modal-content h2 {
-        font-size: 18px; /* Slightly larger font for the heading */
+        font-size: 18px;
+        text-align: center; /* Slightly larger font for the heading */
     }
 
     .modal-content p,
     .modal-content span {
         font-size: 13px; /* Smaller font for paragraphs and spans */
+        text-align: center;
+    }
+    .modal-content a{
+        cursor:pointer;
     }
 
     .modal-content input[type="email"],
@@ -193,6 +198,7 @@
     .modal-content button {
         font-size: 14px; /* Smaller font for buttons */
     }
+
 
 
 
@@ -312,7 +318,7 @@
         color: #009688;
     }
     .account{
-        color: #4f4f4f;
+        color: silver;
     }
     .hr-text {
         display: flex;
@@ -361,12 +367,12 @@
 
     /* Adding the lock icon as a background */
     .password-container::before {
-        content: "\f023"; /* Font Awesome lock icon */
+        content: '\f023';
         font-family: "Font Awesome 6 Free";
         font-weight: 900;
         position: absolute;
         left: 10px; /* Position the icon inside the input */
-        top: 50%;
+        margin-top: 7%;
         transform: translateY(-50%);
         color: #4f4f4f; /* Lock icon color */
         pointer-events: none; /* Ensure the icon doesn’t interfere with input */
@@ -712,4 +718,3 @@
             margin: 0 10px;
         }
     }
-    
